@@ -37,6 +37,7 @@
         background-color: variables.$corTextButton;
         color: variables.$corBorderLogo2;
         font-weight: bold;
+        padding: 0.5rem 1rem;
         
         &:hover {
             background-color: variables.$corBorderLogo1;
