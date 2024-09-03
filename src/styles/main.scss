@@ -1,0 +1,97 @@
+@use "variables.scss";
+@use "header.scss";
+@use "footer.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: font-pesonalizada;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  padding: 5.6vw;
+  background-color: variables.$corFundoPrincipal;
+}
+
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+
+  .button-item {
+    background-color: variables.$corBorderLogo2;
+    color: variables.$corTextButton;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-family: font-pesonalizada2;
+    text-align: center;
+    line-height: 1.35736904em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+    display: block;
+    transition: all .5s ease;
+    
+    &:hover {
+        background-color: variables.$corButtonHover;
+        transition: all .5s ease;
+    }
+  }
+}
+
+@font-face {
+  font-family: font-pesonalizada;
+  src: url("../assets/fonts/font-pesonalizada.woff2");
+}
+@font-face {
+  font-family: font-pesonalizada2;
+  src: url("../assets/fonts/font-pesonalizada2.woff2");
+}
+@font-face {
+  font-family: font-pesonalizada3;
+  src: url("../assets/fonts/font-pesonalizada3.woff2");
+}
+
+.content {
+  &__store {
+    margin: 2rem 0;
+    &__title {
+      text-align: center;
+      font-size: 3rem;
+      color: variables.$corTextPrimario;
+      line-height: 1.3858658em;
+    }
+    &__subtitle {
+      line-height: 1.37302407em;
+      text-align: center;
+      font-family: font-pesonalizada2;
+      text-transform: uppercase;
+      letter-spacing: 0.146em;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  .list__contact__store {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      .img-item {
+        width: 30px;
+        height: 30px;
+        &__especial {
+            transform: rotate(105deg);
+        }
+      }
+    }
+  }
+}
